@@ -1,189 +1,96 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: 李龙宇 (Longyu Li)
+  label: 资深算法工程师 | 大模型端侧能效 / 模型压缩与量化 / 芯片软硬件协同
+  email: veyronmath@gmail.com
+  location: 上海市杨浦区
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: 拥有 6 年模型压缩、高效推理与端侧能效研发经验，深耕大模型动态稀疏、端侧超低比特量化、知识蒸馏及 Agent 调优流水线。曾先后任职于小米自研芯片部、华为诺亚方舟实验室与海思半导体，主导多项大模型与视觉模型的小型化及千万级终端落地。具备从 Megatron / ModelLink 分布式训练调优到 vDSP / NPU 芯片底层部署的全栈能效优化能力，曾获华为“研发工程能力提升奖”。
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
+      username: yumath
     - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+      username: yumath
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
+      - institution: 南京大学 (Nanjing University)
+        location: 南京, 中国
+        area: 计算机技术
+        studyType: 硕士
+        start_date: 2017-09
+        end_date: 2020-07
         highlights:
-          - Description 1.
-          - Description 2.
+          - "研究方向：文本关键信息抽取与实体识别优化，已授权国家发明专利一项。"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+      - institution: 中国矿业大学 (北京)
+        location: 北京, 中国
+        area: 数学与应用数学
+        studyType: 本科
+        start_date: 2011-09
+        end_date: 2015-07
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: 小米｜玄戒 - 多媒体算法
+        position: 资深算法工程师
+        location: 上海
+        start_date: 2025-08
+        end_date: present
+        summary: 针对端侧芯片严苛的算力与功耗约束，主导视觉大模型 / ISP 底层算法的低比特量化研发与端侧 vDSP 高性能部署。
         highlights:
-          - Relativity
-          - Description 2.
+          - "端侧低比特量化算法研发与精度恢复：主导 INT8/INT16 混合精度量化搜索策略，保证画质 PSNR/SSIM 损失 < 0.15 dB；攻克 PTQ/QAT 算法，设计自适应 Clipping 与误差补偿机制；打通模型分析、模拟量化到板端在环验证（HIL）的完整链路。"
+          - "端侧 vDSP 高性能模型部署与 Agent 自动化调优系统：构建面向 vDSP 的智能调优流水线，由 Agent 自动调度硬件 Profiling 工具、执行逐层敏感度分析与策略搜索，实现定点化精度与时延的多目标自适应闭环；主导定点化对齐、算子重组与访存带宽瓶颈（Memory-bound）优化；结合通道剪枝与自适应蒸馏最大化保留画质与表征能力。"
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: 华为｜诺亚方舟实验室 - 小模型实验室
+        position: 算法工程师
+        location: 上海
+        start_date: 2022-03
+        end_date: 2025-08
+        summary: 主导大模型动态稀疏方案研发与大规模训练，以及端侧 CV/多模态模型高效推理与压缩基础设施建设。
         highlights:
-          - Description 1.
-          - Description 2.
+          - "LLM 动态稀疏方案研发与大规模训练：针对 Transformer 推理 Memory-bound 瓶颈，主导研发基于激活稀疏的动态权重调整方案；设计激活函数替换与定制化算子优化；SFT 阶段引入 Low Rank 稀疏 Predictor；在昇腾平台深度定制 Megatron 并迁移至 ModelLink，支持多机多卡大规模预训练；基于 DKD 算法在 7B 模型上实现精度损失 < 0.1% (PPL)。"
+          - "端侧模型高效推理与压缩基础设施 (CV/多模态)：设计基于 Weight Normalization 参数共享的通道对齐剪枝法及 L0 正则化剪枝策略（申请华为公司技术秘密）；端侧底层 Profile 分析实现 4K 30fps 实时推理性能；应用 Logits/Feature 蒸馏与重参数化；成功落地多款华为旗舰手机及海思芯片。"
+          - "高性能端侧量化与自监督优化专项：PoT 零成本量化方案（移位操作），作为核心亮点亮相华为旗舰手机发布会；设计对比学习自监督训练框架与自蒸馏；通过 Ensemble 蒸馏构造正向数据，针对性优化伪影问题。"
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      - company: 华为｜海思半导体
+        position: 软件/系统开发工程师
+        location: 上海
+        start_date: 2020-09
+        end_date: 2022-03
+        summary: 参与海思芯片系统的架构重构与内存精简工作。
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
-
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
-
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+          - "架构重构：基于 DCI 框架主导业务逻辑向 C++ 迁移，通过自研 DSL 语言实现业务与实现的深度解耦，独立实现 DSL 关键字并合入核心库。"
+          - "性能精简与荣誉：通过反汇编分析寻找内存痛点，主导系统级内存精简专项，显著降低芯片资源占用；获评海思“优秀新员工”及“芯星奖”，获华为软件可信专业级认证。"
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: Bert NER
+        url: https://github.com/yumath/BertNER
+        start_date: 2018
+        end_date: 2019
+        summary: BERT 中文命名实体识别开源微调项目 (450+ Stars, 90+ Forks)。结合 BiLSTM+CRF 结构，在社交媒体 Weibo NER 数据集上取得了 95.6% 的 F1-score。
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - "BERT, BiLSTM+CRF, 预训练微调, 知识蒸馏"
 
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    Skills:
+      - name: 核心专长
+        keywords: "端侧大模型能效优化、模型压缩（结构化剪枝 / 超低比特量化 / 知识蒸馏）、动态稀疏、Agent 自动化调优"
+      - name: 编程语言
+        keywords: "C / C++（精通高性能系统重构与内存优化）、Python、Shell、CUDA"
+      - name: 训练与分布式框架
+        keywords: "PyTorch、Megatron-LM、ModelLink、DeepSpeed、PEFT、Transformers、Accelerate"
+      - name: 端侧与芯片部署
+        keywords: "vDSP 定点化部署、Ascend CANN、ONNX / TensorRT、端侧高性能算子设计与访存优化"
 
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+    Awards:
+      - title: 华为“研发工程能力提升奖”
+        awarder: 华为技术有限公司
+        date: 2024
+      - title: 海思“优秀新员工”及“芯星奖”
+        awarder: 华为海思半导体
+        date: 2021
+      - title: 华为软件可信专业级认证
+        awarder: 华为技术有限公司
+        date: 2021
+      - title: 国家发明专利（已授权）
+        date: 2020
+        summary: 结合深度学习与规则约束的实体信息抽取方法。
