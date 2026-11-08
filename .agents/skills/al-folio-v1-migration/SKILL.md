@@ -1,3 +1,8 @@
+---
+name: al-folio-v1-migration
+description: Migrate an existing customized al-folio fork to v1.x. Use this skill when upgrading or migrating an existing site to the v1.x architecture.
+---
+
 # al-folio v1 Migration
 
 Use this skill when a user asks an agent to migrate an existing customized al-folio fork to v1.x.
